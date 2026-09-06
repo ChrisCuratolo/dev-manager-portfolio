@@ -1,2 +1,3 @@
 # dev-manager-portfolio
-React-based single-page site showcasing Dev Manager skills: leadership case studies, roadmaps, OKRs, and link to resume placeholder.
+
+A demo portfolio site focused on Dev Manager skills. Replace resume.md with your PDF (same filename) to link directly from the site.

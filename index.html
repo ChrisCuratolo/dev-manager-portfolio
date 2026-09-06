@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Dev Manager portfolio demo blending leadership, roadmaps, OKRs, and AI design. Includes case study and A/B prompt lab." />
+  <meta property="og:title" content="Dev Manager Portfolio — Chris Curatolo" />
+  <meta property="og:description" content="Dev Manager portfolio demo with case studies and a mock AI prompt lab." />
+  <title>Dev Manager Portfolio — Chris Curatolo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <h1>Chris Curatolo — Dev Manager Focus</h1>
+    <p class="tagline">Friendly, narrative portfolio mixing Support, Dev Management, and AI Design.</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#ai">AI Design</a>
+      <a id="resume-link" href="./resume.md" target="_blank" rel="noopener">View Resume</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="about">
+      <h2>About</h2>
+      <p>A narrative summary that blends support leadership, engineering management, and practical AI design thinking. I focus on outcomes, alignment, and mentorship.</p>
+    </section>
+
+    <section id="work">
+      <h2>Selected Highlights</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Team & Delivery</h3>
+          <p>High-level description of roadmap planning, OKRs, and cross-team collaboration to deliver customer value.</p>
+        </article>
+        <article class="card">
+          <h3>Process & Coaching</h3>
+          <p>Overview of feedback loops, one-on-ones, and scalable onboarding practices.</p>
+      </div>
+
+      <section id="case-study">
+        <h2>Case Study — Payments Feature Delivery</h2>
+        <p><strong>Role:</strong> Dev Manager (led cross-functional delivery)</p>
+        <p><strong>Problem:</strong> Need to deliver a compliant payments feature with tight timeline and legacy dependencies.</p>
+        <p><strong>Actions:</strong> Prioritized backlog, instituted OKRs, implemented clear ownership and bi-weekly roadmap alignment with product and compliance.</p>
+        <p><strong>Outcome:</strong> Delivered v1 in 3 months; post-release production defects reduced by 40% in the first quarter through improved QA and rollout strategy.</p>
+      </section>
+    </section>
+
+    <section id="ai">
+      <h2>AI Design — Interactive Prompt Lab</h2>
+      <p>Explore prompt structure and try A/B prompt variations. This is a client-side mock — no APIs used.</p>
+      <div class="ai-panel">
+        <textarea id="prompt" placeholder="Write a short status update for stakeholders focused on delivery impacts..." rows="4"></textarea>
+        <div class="controls">
+          <label><input id="styleFriendly" type="checkbox" checked /> Friendly tone</label>
+          <button id="runA">Run A (Mock)</button>
+          <button id="runB">Run B (Mock)</button>
+          <button id="compare">Compare A vs B</button>
+        </div>
+        <div class="ab-results">
+          <div>
+            <h4>Output A</h4>
+            <pre id="aiOutputA" aria-live="polite"></pre>
+          </div>
+          <div>
+            <h4>Output B</h4>
+            <pre id="aiOutputB" aria-live="polite"></pre>
+          </div>
+        </div>
+        <div id="evaluation">
+          <h4>Evaluation</h4>
+          <pre id="evalOutput" aria-live="polite"></pre>
+        </div>
+      </div>
+      <p class="note">This demo is client-side only — no external APIs required. Use the Compare button to see a simple heuristic evaluation (conciseness and relevance).</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made by Chris • Replace the resume file (resume.md) with your PDF and update the link if desired.</p>
+  </footer>
+
+  <script defer src="main.js"></script>
+</body>
+</html>
